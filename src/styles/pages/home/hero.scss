@@ -1,0 +1,122 @@
+.hero {
+    &__img-box {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: -1;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 768px) {
+            max-width: 400px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__dot {
+        background-color: var(--color-blue);
+        position: absolute;
+
+          &.big {
+            width: 200px;
+            height: 200px;
+            right: -50%;
+            transform: translateX(-50%);
+            top: 0;
+
+            @media only screen and (min-width: 768px) {
+                width: 150px;
+                height: 150px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                width: 200px;
+                height: 200px;
+            }
+            @media only screen and (min-width: 1200px) {
+                width: 230px;
+                height: 230px;
+            }
+
+            @media only screen and (min-width: 1400px) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+        &.small {
+            z-index: -1;
+            width: 60px;
+            height: 60px;
+            bottom: 2%;
+            left: 10%;
+
+            @media only screen and (min-width: 768px) {
+                width: 50px;
+                height: 50px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                width: 70px;
+                height: 70px;
+            }
+
+            @media only screen and (min-width: 1400px) {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        @media only screen and (min-width: 768px) {
+            margin: {
+                top: 40px;
+                left: -30px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            margin-top: 50px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            margin: {
+                top: 60px;
+                left: -40px;
+            }
+        }
+    }
+
+    &__text {
+        @media only screen and (min-width: 768px) {
+            padding: {
+                top: 100px;
+                left: 70px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            padding: {
+                top: 200px;
+                left: 90px;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            padding: {
+                top: 300px;
+                left: 200px;
+            }
+        }
+    }
+}

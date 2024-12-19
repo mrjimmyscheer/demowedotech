@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Ubuntu",sans-serif;
+    color:var(--color-grey);
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section--spacing{
+    padding-bottom:80px;
+
+    @media only screen and (min-width: 992px) {
+        padding-bottom:160px;
+    }
+}
+
+
+.round {
+    border-radius: 100%;
+}
+
+.bg-gradient {
+    background: linear-gradient(
+        13deg,
+        rgb(62, 177, 200) 24%,
+        rgba(255, 255, 255, 0) 52%
+    );
+    z-index: -1;
+}

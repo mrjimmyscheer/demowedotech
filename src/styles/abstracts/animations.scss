@@ -1,0 +1,46 @@
+// Styling scrollable elements
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.scrolled.slide-left {
+    animation: {
+        name: slide-in-left;
+        duration: 0.5s;
+        timing-function: ease-in-out;
+        fill-mode: forwards;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-right {
+    animation: {
+        name: slide-in-right;
+        duration: 0.5s;
+        timing-function: ease-in-out;
+        fill-mode: forwards;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,118 @@
+.btn--round{
+    border-radius:100%;
+    background-color: var(--color-grey);
+    width: 48px;
+    height: 48px;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .3s;
+    cursor: pointer;
+    i{
+        color: var(--color-blue);
+        font-size: 24px;
+    }
+
+    &:hover{
+        transform: translateX(4px);
+    }
+}
+
+//btn for audience page
+.btn--audience {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: var(--color-blue);
+    transform: rotate(-45deg);
+    transition: all 0.3s;
+    @media only screen and (min-width: 425px) {
+        width: 120px;
+        height: 120px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+        top: -10px;
+        right: -10px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        width: 75px;
+        height: 75px;
+        top: -5px;
+        right: -5px;
+    }
+    @media only screen and (min-width: 1200px) {
+        width: 100px;
+        height: 100px;
+        top: 0;
+        right: 0;
+    }
+
+    i {
+        font-size: 65px;
+    @media only screen and (min-width: 425px) {
+        font-size: 80px;
+
+    }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 32px;
+        }
+
+        @media only screen and (min-width: 992px) {
+            font-size: 48px;
+        }
+
+        @media only screen and (min-width: 1400px) {
+            font-size: 60px;
+        }
+    }
+}
+
+
+//text link
+.text-link{
+    color: var(--color-blue);
+    text-decoration:none;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color-dark-blue);
+    }
+}
+
+//btn square
+.btn--square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue);
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    transition: all .3s;
+    
+    i {
+        color: white;
+        font-size: 32px;
+
+    }
+
+    &:hover{
+        background-color: var(--color-dark-blue);
+    }
+
+}
